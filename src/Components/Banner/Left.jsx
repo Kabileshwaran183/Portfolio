@@ -17,12 +17,12 @@ const Left = () => {
     });
     return (
         <div className="w-full lgl:w-1/2 flex flex-col gap-20">
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-5 ">
                 <h4 className=" text-lg font-normal">WELCOME TO MY WORLD</h4>
-                <h1 className="text-6xl font-bold text-white">
+                <h1 className="text-6xl max-md:text-3xl font-bold text-white">
                     Hi, I'm <span className="text-designColor capitalize">Kabileshwaran</span>
                 </h1>
-                <h2 className="text-4xl font-bold text-white">
+                <h2 className="text-4xl max-md:text-xl font-bold text-white">
                     a <span>{text}</span>
                     <Cursor
                         cursorBlinking="false"
@@ -44,12 +44,12 @@ const Left = () => {
                     <div className="flex gap-4">
                         <a href="https://github.com/Kabileshwaran183" target="blank">
                             <span className="bannerIcon">
-                                <FaGithub />
+                                <FaGithub className="xl:w-7 xl:h-7"/>
                             </span>
                         </a>
                         <a href="https://github.com/noorjsdivs/portfolioone" target="blank">
                             <span className="bannerIcon">
-                                <FaLinkedinIn />
+                                <FaLinkedinIn className="xl:w-7 xl:h-7"/>
                             </span>
                         </a>
                     </div>
@@ -58,30 +58,30 @@ const Left = () => {
                     <h2 className="text-base uppercase font-titleFont mb-4 ">
                         BEST SKILL ON
                     </h2>
-                    <div className="grid-flow-row grid grid-cols-5 gap-4">
+                    <div className="grid-flow-row grid grid-cols-5 gap-4 max-xl:flex max-xl:flex-wrap">
                     <span className="bannerIcon">
-                            <FaJava />
+                            <FaJava className="xl:w-9 xl:h-7"/>
                         </span>
                         <span className="bannerIcon">
-                            <FaReact />
+                            <FaReact className="xl:w-7 xl:h-7"/>
                         </span>
                         <span className="bannerIcon">
-                            <SiJavascript />
+                            <SiJavascript className="xl:w-7 xl:h-7"/>
                         </span>
                         <span className="bannerIcon">
-                            <SiHtml5 />
+                            <SiHtml5 className="xl:w-7 xl:h-7"/>
                         </span>
                         <span className="bannerIcon">
-                            <SiCss3 />
+                            <SiCss3 className="xl:w-7 xl:h-7"/>
                         </span>
                         <span className="bannerIcon">
-                            <SiTailwindcss />
+                            <SiTailwindcss className="xl:w-7 xl:h-7"/>
                         </span>
                         <span className="bannerIcon">
-                            <SiFigma />
+                            <SiFigma className="xl:w-7 xl:h-7"/>
                         </span>
                         <span className="bannerIcon">
-                            <FaPython />
+                            <FaPython className="xl:w-7 xl:h-7"/>
                         </span>
                         
                         
