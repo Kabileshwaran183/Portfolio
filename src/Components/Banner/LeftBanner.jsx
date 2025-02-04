@@ -1,7 +1,5 @@
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import {
-    FaFacebookF,
-    FaTwitter,
     FaLinkedinIn,
     FaReact,
     FaGithub,
