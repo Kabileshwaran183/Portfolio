@@ -1,4 +1,4 @@
-import Banner from "./Components/Banner";
+import Banner from "./Components/Banner/Banner";
 import Contact from "./Components/Contact";
 import Features from "./Components/Features";
 import Footer from "./Components/Footer";
