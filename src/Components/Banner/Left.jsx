@@ -7,7 +7,7 @@ import {
     FaPython,
 } from "react-icons/fa";
 import { SiTailwindcss, SiFigma, SiNextdotjs, SiJavascript, SiHtml5, SiCss3 } from "react-icons/si"
-const LeftBanner = () => {
+const Left = () => {
     const [text] = useTypewriter({
         words: ["Professional Coder.", "Full Stack Developer.", "UI Designer."],
         loop: true,
@@ -92,4 +92,4 @@ const LeftBanner = () => {
     );
 }
 
-export default LeftBanner
+export default Left
