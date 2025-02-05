@@ -16,7 +16,7 @@ const Left = () => {
         delaySpeed: 2000,
     });
     return (
-        <div className="w-full lgl:w-1/2 flex flex-col gap-20">
+        <div className="w-full lgl:w-1/2 flex flex-col mdl:gap-10 xl:gap-14 max-md:gap-7">
             <div className="flex flex-col gap-5 ">
                 <h4 className=" text-lg font-normal">WELCOME TO MY WORLD</h4>
                 <h1 className="text-6xl max-md:text-3xl font-bold text-white">
@@ -36,9 +36,9 @@ const Left = () => {
                     just to spruce things up, but doing it in ways that.
                 </p>
             </div>
-            <div className="flex flex-col xl:flex-row gap-6 lgl:gap-14 ">
+            <div className="flex flex-col xl:flex-row gap-6 md:gap-8 xl:gap-14  ">
                 <div>
-                    <h2 className="text-base uppercase font-titleFont mb-4">
+                    <h2 className="text-base uppercase font-titleFont mb-4 max-md:text-sm">
                         Find me in
                     </h2>
                     <div className="flex gap-4">
@@ -55,7 +55,7 @@ const Left = () => {
                     </div>
                 </div>
                 <div>
-                    <h2 className="text-base uppercase font-titleFont mb-4 ">
+                    <h2 className="text-base uppercase font-titleFont mb-4 max-md:text-sm">
                         BEST SKILL ON
                     </h2>
                     <div className="grid-flow-row grid grid-cols-5 gap-4 max-xl:flex max-xl:flex-wrap">
