@@ -10,7 +10,7 @@ const Features = () => {
             id="features"
             className="w-full py-10 border-b-[1px] border-b-black"
         >
-            <Title title="Projects" des="What I Do" />
+            <Title title="Here Internships" des="What I Do" />
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-20">
                 <Card title="React Projects"
                     des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad."
