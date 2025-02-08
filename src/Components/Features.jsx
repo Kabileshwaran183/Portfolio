@@ -12,29 +12,17 @@ const Features = () => {
         >
             <Title title="Here Internships" des="What I Do" />
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-20">
-                <Card title="React Projects"
+                <Card title="Web developer"
                     des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad."
-                    icon={<SiReact/>}
+                    logo="apollo.png"
                 />
-                <Card title="JavaScript Projects"
+                <Card title="Graphic Designer"
                     des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad."
-                    icon={<SiJavascript/>}
+                    logo="magnion.png "
                 />
-                <Card title="Python Projects"
+                <Card title="Digital Marketing"
                     des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad."
-                    icon={<FaPython/>}
-                />
-                <Card title="Photoshop Designs"
-                    des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad."
-                    icon={<DiPhotoshop/>}
-                />
-                <Card title="Figma Designs"
-                    des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad."
-                    icon={<FaFigma/>}
-                />
-                <Card title="Canva Designs"
-                    des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad."
-                    icon={<SiCanva/>}
+                    logo="plus91.png"
                 />
             </div>
         </section>

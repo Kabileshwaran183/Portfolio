@@ -2,7 +2,7 @@ import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <div className="w-full py-4 h-auto grid grid-cols-1 md:grid-cols-2 lgl:grid-cols-11 gap-8">
+        <div className="w-full py-4 px-4 h-auto grid grid-cols-1 md:grid-cols-2 lgl:grid-cols-11 gap-8">
             <div className="w-full h-full flex flex-col gap-8 col-span-3">
                 <div className="flex justify-center" >
                     <img className="w-28 items-center" src="kabi3.png" alt="logo" />
