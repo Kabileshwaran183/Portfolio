@@ -1,5 +1,6 @@
 import Banner from "./Components/Banner/Banner";
 import Contact from "./Components/Contact/Contact";
+import Education from "./Components/Education";
 import Features from "./Components/Features";
 import Footer from "./Components/Footer";
 import FooterBottom from "./Components/FooterBottom";
@@ -15,6 +16,7 @@ const App = () => (
       <div className="max-w-screen-xl mx-auto">
         <Banner />
         <Features />
+        <Education />
         <Projects />
         <Resume />
         <Contact />
