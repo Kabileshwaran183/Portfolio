@@ -5,7 +5,7 @@ import ContactLeft from "./ContactLeft";
 
 const Contact = () => {
     const [emailCard, setEmailCard] = useState(true);
-    const [linkedInCard, setLinkedInCard] = useState(true);
+    const [linkedInCard, setLinkedInCard] = useState(false);
 
     const [username, setUsername] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");

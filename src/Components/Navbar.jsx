@@ -7,14 +7,17 @@ const Navbar = () => {
                 <img src="/kabi2.png" className="xl:w-36 max-md:w-20 mdl:w-28"></img>
             </div>
             <div>
-                <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10">
-                    {navLinksData.map(({ _id, title}) => (
+                <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10 ">
+                    {navLinksData.map(({ _id, title }) => (
+
                         <li
-                            className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300"
+                            className="text-base font-normal text-gray-400 tracking-wide hover:text-designColor duration-300 group cursor-pointer hover:underline-[red]"
                             key={_id}
                         >
                             {title}
+                            
                         </li>
+
                     ))}
                 </ul>
             </div>
