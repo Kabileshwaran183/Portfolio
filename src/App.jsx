@@ -1,11 +1,10 @@
 import Banner from "./Components/Banner/Banner";
-import Contact from "./Components/Contact";
+import Contact from "./Components/Contact/Contact";
 import Features from "./Components/Features";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import Projects from "./Components/Projects";
 import Resume from "./Components/Resume";
-import Testimonal from "./Components/Testimonal";
 
 
 const App = () => (
@@ -16,7 +15,6 @@ const App = () => (
         <Features />
         <Projects />
         <Resume />
-        <Testimonal />
         <Contact />
         <Footer />
       </div>
