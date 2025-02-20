@@ -14,6 +14,13 @@ const Projects = () => {
                 />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
+            <ProjectsCard
+                    title="Natarajan and co - Ultratech Building solutions"
+                    des="A realtime react project to showup the Landing page for that business."
+                    src="/nc.png"
+                    projLink="https://natarajanandco.com/"
+                    
+                />
                 <ProjectsCard
                     title="Shopping Site"
                     des="A sample front end shopping site with the help of React, Tailwind CSS."
