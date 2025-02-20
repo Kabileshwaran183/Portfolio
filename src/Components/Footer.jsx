@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="w-full py-4 px-4 h-auto grid grid-cols-1 md:grid-cols-2 lgl:grid-cols-11 gap-8">
             <div className="w-full h-full flex flex-col gap-8 col-span-3">
                 <div className="flex justify-center" >
-                    <img className="w-28 items-center" src="kabi3.png" alt="logo" />
+                    <img className="w-40 items-center" src="kabilesh.png" alt="logo" />
                 </div>
                 <div className="flex justify-center gap-4 ">
                     <span className="bannerIcon w-8 h-8">
