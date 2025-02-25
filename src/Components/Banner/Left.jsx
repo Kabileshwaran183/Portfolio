@@ -47,7 +47,7 @@ const Left = () => {
                                 <FaGithub className="xl:w-7 xl:h-7"/>
                             </span>
                         </a>
-                        <a href="https://github.com/noorjsdivs/portfolioone" target="blank">
+                        <a href="https://linkedin.com/in/kabileshwaranB/" target="blank">
                             <span className="bannerIcon">
                                 <FaLinkedinIn className="xl:w-7 xl:h-7"/>
                             </span>
