@@ -43,10 +43,10 @@ const Contact = () => {
         } else {
             // ✅ Sending Email via EmailJS
             emailjs.sendForm(
-                "service_xcuemac",    // Replace with your EmailJS Service ID
-                "template_s3qlrqn",   // Replace with your EmailJS Template ID
+                process.env.REACT_APP_EMAILJS_SERVICE_ID,
+                process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
                 formRef.current,
-                "Sw4iNZwdccar4T4KR"     // Replace with your EmailJS Public Key
+                process.env.REACT_APP_EMAILJS_PUBLIC_KEY
             )
                 .then((result) => {
                     console.log(result.text);
