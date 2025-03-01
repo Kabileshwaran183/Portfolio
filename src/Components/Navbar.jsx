@@ -8,10 +8,11 @@ const Navbar = () => {
             </div>
             <div>
                 <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10 ">
-                    {navLinksData.map(({ _id, title }) => (
+                    {navLinksData.map(({ _id, title,link }) => (
                         <li
                             className="text-base font-normal text-gray-400 tracking-wide hover:text-designColor duration-300 group cursor-pointer hover:underline-[red]"
                             key={_id}
+                            href={link}
                         >
                             {title}
                             
