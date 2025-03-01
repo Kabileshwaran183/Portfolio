@@ -36,7 +36,7 @@ const Left = () => {
                     just to spruce things up, but doing it in ways that.
                 </p>
             </div>
-            <div className="flex flex-col xl:flex-row gap-6 md:gap-8 xl:gap-14  ">
+            <div className="flex flex-col  xl:flex-row gap-6 md:gap-8 xl:gap-14  ">
                 <div>
                     <h2 className="text-base uppercase font-titleFont mb-4 max-md:text-sm">
                         Find me in

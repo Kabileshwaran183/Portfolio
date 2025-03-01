@@ -50,7 +50,7 @@ const Projects = () => {
                     gitLink="https://github.com/Kabileshwaran183/Tenzies-Game"
                 />
                 <ProjectsCard
-                    title="Recipe App"
+                    title="Meme Generator"
                     des="A quick way to create memes - providing the text and generate random image. Random image is generated using the Meme API."
                     src="/meme.png"
                     projLink="https://p8-meme-generator.netlify.app/"
