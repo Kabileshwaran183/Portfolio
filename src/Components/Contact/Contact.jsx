@@ -2,10 +2,13 @@ import React, { useState, useRef } from "react";
 import Title from "../Title";
 import ContactLeft from "./ContactLeft";
 import emailjs from "@emailjs/browser";  // ✅ Import EmailJS
+import { BiPhone } from "react-icons/bi";
+import { BsGithub, BsInstagram, BsWhatsapp } from "react-icons/bs";
+import { LiaLinkedin } from "react-icons/lia";
 
 const Contact = () => {
     const [emailCard, setEmailCard] = useState(true);
-    const [linkedInCard, setLinkedInCard] = useState(false);
+    const [contactCard, setcontactCard] = useState(false);
 
     const [username, setUsername] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
@@ -48,7 +51,7 @@ const Contact = () => {
                 formRef.current,
                 import.meta.env.VITE_EMAILJS_PUBLIC_KEY
             )
-            
+
                 .then((result) => {
                     console.log(result.text);
                     setSuccessMsg(`Thank you ${username}, your message has been sent successfully!`);
@@ -66,7 +69,10 @@ const Contact = () => {
     };
 
     return (
-        <section id="contact" className="w-full py-20 border-b-[1px] border-b-black">
+        <section
+            id="contact"
+            className="w-full py-20 border-b-[1px] border-b-black scroll-mt-[100px]"
+        >
             <div className="flex justify-center items-center text-center">
                 <Title title="CONTACT" des="Contact With Me" />
             </div>
@@ -74,13 +80,13 @@ const Contact = () => {
                 <div className="w-full h-auto flex flex-col lgl:flex-row justify-between">
                     <div>
                         <ul className="w-48 flex flex-col gap-8">
-                            <li onClick={() => { setEmailCard(true); setLinkedInCard(false); }}
+                            <li onClick={() => { setEmailCard(true); setcontactCard(false); }}
                                 className={`${emailCard ? "border-designColor rounded-lg" : "border-transparent"} resumeLi`}>
                                 Email
                             </li>
-                            <li onClick={() => { setEmailCard(false); setLinkedInCard(true); }}
-                                className={`${linkedInCard ? "border-designColor rounded-lg" : "border-transparent"} resumeLi`}>
-                                LinkedIn
+                            <li onClick={() => { setEmailCard(false); setcontactCard(true); }}
+                                className={`${contactCard ? "border-designColor rounded-lg" : "border-transparent"} resumeLi`}>
+                                Contact me
                             </li>
                         </ul>
                     </div>
@@ -160,6 +166,66 @@ const Contact = () => {
                             </form>
                         </div>
                     }
+                    {contactCard && (
+                        <div className="w-full lgl:w-[75%] h-full py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] flex flex-col gap-8 p-4 lgl:p-8 rounded-lg shadow-shadowOne">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                {/* Phone Number */}
+                                <div className="flex items-center gap-4 p-4 bg-[#1e2024] rounded-lg">
+                                    <span className="text-designColor text-2xl"><BiPhone /></span>
+                                    <div>
+                                        <h3 className="text-lg font-medium text-gray-300">Phone</h3>
+                                        <a href="tel:+1234567890" className="text-gray-400 hover:text-designColor transition-colors">
+                                            +1234567890
+                                        </a>
+                                    </div>
+                                </div>
+
+                                {/* WhatsApp */}
+                                <div className="flex items-center gap-4 p-4 bg-[#1e2024] rounded-lg">
+                                    <span className="text-designColor text-2xl"><BsWhatsapp /></span>
+                                    <div>
+                                        <h3 className="text-lg font-medium text-gray-300">WhatsApp</h3>
+                                        <a href="https://wa.me/1234567890" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-designColor transition-colors">
+                                            Chat on WhatsApp
+                                        </a>
+                                    </div>
+                                </div>
+
+                                {/* LinkedIn */}
+                                <div className="flex items-center gap-4 p-4 bg-[#1e2024] rounded-lg">
+                                    <span className="text-designColor text-2xl"><LiaLinkedin/></span>
+                                    <div>
+                                        <h3 className="text-lg font-medium text-gray-300">LinkedIn</h3>
+                                        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-designColor transition-colors">
+                                            Connect on LinkedIn
+                                        </a>
+                                    </div>
+                                </div>
+
+                                {/* GitHub */}
+                                <div className="flex items-center gap-4 p-4 bg-[#1e2024] rounded-lg">
+                                    <span className="text-designColor text-2xl"><BsGithub/></span>
+                                    <div>
+                                        <h3 className="text-lg font-medium text-gray-300">GitHub</h3>
+                                        <a href="https://github.com/yourusername" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-designColor transition-colors">
+                                            View my GitHub
+                                        </a>
+                                    </div>
+                                </div>
+
+                                {/* Instagram */}
+                                <div className="flex items-center gap-4 p-4 bg-[#1e2024] rounded-lg">
+                                    <span className="text-designColor text-2xl"><BsInstagram/></span>
+                                    <div>
+                                        <h3 className="text-lg font-medium text-gray-300">Instagram</h3>
+                                        <a href="https://instagram.com/yourusername" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-designColor transition-colors">
+                                            Follow on Instagram
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    )}
                 </div>
             </div>
         </section>

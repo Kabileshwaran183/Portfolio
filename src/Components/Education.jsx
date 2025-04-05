@@ -3,9 +3,9 @@ import EducationCard from "./EducationCard"
 const Education = () => {
     return (
         <section
-            id="projects"
-            className="w-full pb-24 xl:pb-44 border-b-[1px] border-b-black"
-        >
+        id="education"
+        className="w-full py-20 border-b-[1px] border-b-black scroll-mt-[100px]"
+    >
         <div className="max-md:px-4 md:px-7 xl:px-2">
             <div className=" py-5 md:py-9 font-titleFont flex flex-col gap-2 ">
                 <p className="text-sm text-designColor tracking-[4px]">2019-2021</p>

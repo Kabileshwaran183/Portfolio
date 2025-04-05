@@ -1,4 +1,4 @@
-import { FaVoicemail } from "react-icons/fa";
+
 import "./ContactStyle.css"
 import { SiGmail, SiLinkedin } from "react-icons/si";
 
