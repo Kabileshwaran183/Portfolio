@@ -4,7 +4,7 @@ const Education = () => {
     return (
         <section
         id="education"
-        className="w-full py-20 border-b-[1px] border-b-black scroll-mt-[100px]"
+        className="w-full py-20 scroll-mt-[100px] mb-20"
     >
         <div className="max-md:px-4 md:px-7 xl:px-2">
             <div className=" py-5 md:py-9 font-titleFont flex flex-col gap-2 ">
