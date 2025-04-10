@@ -7,8 +7,12 @@ import {
     FaGithub,
     FaJava,
     FaPython,
+    FaNodeJs,
 } from "react-icons/fa";
-import { SiTailwindcss, SiFigma, SiNextdotjs, SiJavascript, SiHtml5, SiCss3 } from "react-icons/si"
+import { SiTailwindcss, SiFigma, SiNextdotjs, SiJavascript, SiHtml5, SiCss3, SiUipath, SiNodedotjs, SiExpress } from "react-icons/si"
+import { FcNext } from 'react-icons/fc';
+import { DiNodejs } from 'react-icons/di';
+import { IoLogoNodejs } from 'react-icons/io5';
 
 const Left = () => {
     const { theme } = useContext(ThemeContext);
@@ -60,17 +64,17 @@ const Left = () => {
                     </div>
                 </div>
                 <div className="flex items-center justify-center px-4">
-                    <div className={`w-px h-full bg-gradient-to-b from-transparent via-white to-transparent ${
+                    <div className={`w-px h-full bg-gradient-to-b from-transparent  to-transparent ${
                         theme === 'dark' 
-                            ? 'opacity-30 hover:opacity-50 shadow-[0_0_5px_rgba(255,255,255,0.3)]' 
-                            : 'opacity-60 hover:opacity-80'
+                            ? 'via-white opacity-30 hover:opacity-50 shadow-[0_0_5px_rgba(255,255,255,0.3)]' 
+                            : 'via-black opacity-60 hover:opacity-80'
                     } transition-all duration-300`}></div>
                 </div>
                 <div>
                     <h2 className={`text-base uppercase font-titleFont mb-4 max-md:text-sm ${textColor}`}>
                         BEST SKILL ON
                     </h2>
-                    <div className="grid-flow-row grid grid-cols-5 gap-4 max-xl:flex max-xl:flex-wrap">
+                    <div className="grid-flow-row grid grid-cols-6 gap-4 max-xl:flex max-xl:flex-wrap">
                         <span className={`bannerIcon ${iconColor}`}>
                             <FaJava className="xl:w-9 xl:h-7"/>
                         </span>
@@ -78,7 +82,22 @@ const Left = () => {
                             <FaReact className="xl:w-7 xl:h-7"/>
                         </span>
                         <span className={`bannerIcon ${iconColor}`}>
+                            <SiTailwindcss className="xl:w-7 xl:h-7"/>
+                        </span>
+                        <span className={`bannerIcon ${iconColor}`}>
+                            <SiNextdotjs className="xl:w-7 xl:h-7"/>
+                        </span>
+                        <span className={`bannerIcon ${iconColor}`}>
                             <SiJavascript className="xl:w-7 xl:h-7"/>
+                        </span>
+                        <span className={`bannerIcon ${iconColor}`}>
+                            <IoLogoNodejs className="xl:w-9 xl:h-9"/>
+                        </span>
+                        <span className={`bannerIcon ${iconColor}`}>
+                            <SiExpress className="xl:w-9 xl:h-9"/>
+                        </span>
+                        <span className={`bannerIcon ${iconColor}`}>
+                            <SiUipath className="xl:w-9 xl:h-9"/>
                         </span>
                         <span className={`bannerIcon ${iconColor}`}>
                             <SiHtml5 className="xl:w-7 xl:h-7"/>
@@ -87,14 +106,14 @@ const Left = () => {
                             <SiCss3 className="xl:w-7 xl:h-7"/>
                         </span>
                         <span className={`bannerIcon ${iconColor}`}>
-                            <SiTailwindcss className="xl:w-7 xl:h-7"/>
-                        </span>
-                        <span className={`bannerIcon ${iconColor}`}>
                             <SiFigma className="xl:w-7 xl:h-7"/>
                         </span>
                         <span className={`bannerIcon ${iconColor}`}>
                             <FaPython className="xl:w-7 xl:h-7"/>
                         </span>
+                        
+                        
+                        
                     </div>
                 </div>
             </div>

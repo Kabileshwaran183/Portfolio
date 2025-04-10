@@ -14,7 +14,7 @@ const App = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <div className={`w-full h-auto ${theme === 'dark' ? 'bg-bodyColor-dark text-fontColor-dark' : 'bg-bodyColor-light text-fontColor-light'} px-4`}>
+    <div className={`w-full h-auto ${theme === 'dark' ? 'bg-bodyColor-dark text-fontColor-dark' : 'bg-bodyColor-light text-fontColor-light'}`}>
       <Navbar />
       
       <div className="max-w-screen-xl mx-auto">
