@@ -3,12 +3,12 @@ import { ThemeContext } from './context/themeContext';
 import Banner from "./Components/Banner/Banner";
 import Contact from "./Components/Contact/Contact";
 import Education from "./Components/Education";
-import Features from "./Components/Features";
 import Footer from "./Components/Footer";
 import FooterBottom from "./Components/FooterBottom";
 import Navbar from "./Components/Navbar";
 import Projects from "./Components/Projects";
 import Resume from "./Components/Resume";
+import Experience from './Components/Experience';
 
 const App = () => {
   const { theme } = useContext(ThemeContext);
@@ -19,14 +19,14 @@ const App = () => {
       
       <div className="max-w-screen-xl mx-auto">
         <Banner />
-        <Features />
+        <Experience />
         <Education />
         <Projects />
         <Resume />
         <Contact />
       </div>
       
-      <div className={`w-full ${theme === 'dark' ? 'bg-bodyColor-dark/90 text-fontColor-dark/90' : 'bg-bodyColor-light/90 text-fontColor-light/90'}`}>
+      <div id="about" className={`w-full ${theme === 'dark' ? 'bg-bodyColor-dark/90 text-fontColor-dark/90' : 'bg-bodyColor-light/90 text-fontColor-light/90'}`}>
         <Footer />
         <FooterBottom />
       </div>

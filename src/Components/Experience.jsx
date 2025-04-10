@@ -3,12 +3,12 @@ import { ThemeContext } from '../context/themeContext';
 import Card from "./Card";
 import Title from "./Title";
 
-const Features = () => {
+const Experience = () => {
     const { theme } = useContext(ThemeContext);
 
     return (
         <section
-            id="features"
+            id="experience"
             className={`w-full py-20 border-b-[1px] ${
                 theme === 'dark' 
                     ? 'border-b-bodyColor-dark/50' 
@@ -45,4 +45,4 @@ analysis and SEO optimization."
     );
 }
 
-export default Features;
+export default Experience;
