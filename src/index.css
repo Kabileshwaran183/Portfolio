@@ -22,9 +22,9 @@
 
 @layer components {
   .bannerIcon {
-    @apply w-16 h-16 max-md:w-8 max-md:h-8 max-xl:w-12 max-xl:h-12 
-           bg-black/25 dark:text-gray-200 inline-flex items-center justify-center 
-           rounded-lg shadow-lg hover:bg-black/40 hover:text-designColor 
+    @apply w-14 h-14 max-md:w-8 max-md:h-8 max-xl:w-12 max-xl:h-12 
+           bg-black/25 dark:text-fontColor-dark inline-flex items-center justify-center 
+           rounded-lg shadow-lg hover:bg-black/40 hover:text-designColor-light dark:hover:text-designColor-dark
            transition-all duration-[var(--transition-base)] 
            hover:-translate-y-1 cursor-pointer;
   }
@@ -33,27 +33,27 @@
     @apply w-full h-20 dark:bg-black/25 text-lg dark:text-slate-50 text-black flex justify-center 
            cursor-pointer hover:bg-black/40 duration-[var(--transition-base)] 
            items-center border border-transparent rounded-lg 
-           hover:border-designColor/30;
+           hover:border-designColor-light dark:hover:border-designColor-dark hover:border-opacity-30;
   }
 
   .contactInput {
     @apply w-full h-12 rounded-lg border-b border-gray-600 bg-[#191b1e] 
-           text-lightText px-4 focus:outline-none focus:ring-2 
-           focus:ring-designColor/50 focus:border-transparent 
+           text-white dark:text-fontColor-dark px-4 focus:outline-none focus:ring-2 
+           focus:ring-designColor-light/50 dark:focus:ring-designColor-dark/50 focus:border-transparent 
            transition-[var(--transition-base)] placeholder-gray-500;
   }
 
   .contactTextArea {
     @apply w-full rounded-lg border-b border-gray-600 bg-[#191b1e] 
-           text-lightText px-4 py-3 focus:outline-none focus:ring-2 
-           focus:ring-designColor/50 focus:border-transparent 
+           text-white dark:text-fontColor-dark px-4 py-3 focus:outline-none focus:ring-2 
+           focus:ring-designColor-light/50 dark:focus:ring-designColor-dark/50 focus:border-transparent 
            transition-[var(--transition-base)] resize-none 
            placeholder-gray-500;
   }
 
   .btn-primary {
-    @apply px-6 py-3 rounded-lg bg-designColor text-white font-medium 
-           hover:bg-designColor/90 transition-[var(--transition-base)] 
+    @apply px-6 py-3 rounded-lg bg-designColor-light dark:bg-designColor-dark text-white font-medium 
+           hover:bg-designColor/90 dark:hover:bg-designColor-dark/90 transition-[var(--transition-base)] 
            shadow-md hover:shadow-lg active:scale-95;
   }
 }

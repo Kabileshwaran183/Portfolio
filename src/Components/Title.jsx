@@ -7,7 +7,7 @@ const Title = ({ title, des }) => {
     return (
         <div className="flex flex-col gap-4 font-titleFont mb-14">
             <h3 className={`text-sm uppercase font-light tracking-widest ${
-                theme === 'dark' ? 'text-designColor' : 'text-designColor/80'
+                theme === 'dark' ? 'text-designColor-dark' : 'text-designColor/80'
             }`}>
                 {title}
             </h3>

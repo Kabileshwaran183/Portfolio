@@ -7,15 +7,15 @@ const EducationCard = ({ title, subTitle, result, des }) => {
     const isDark = theme === "dark";
 
     const baseBg = isDark
-        ? "bg-black bg-opacity-20 hover:bg-opacity-30"
-        : "bg-white bg-opacity-70 hover:bg-white";
+        ? "bg-bodyColor-dark/80 hover:bg-bodyColor-dark/60"
+        : "bg-bodyColor-light/80 hover:bg-bodyColor-light";
 
-    const textPrimary = isDark ? "text-gray-400 group-hover:text-white" : "text-gray-700 group-hover:text-black";
-    const textSecondary = isDark ? "text-gray-400 group-hover:text-gray-300" : "text-gray-600 group-hover:text-gray-800";
-
-    const resultStyle = isDark
-        ? "text-designColor group-hover:text-green-400 bg-black bg-opacity-25"
-        : "text-blue-600 group-hover:text-green-600 bg-gray-100";
+    const textPrimary = isDark 
+        ? "text-fontColor-dark group-hover:text-fontColor-dark" 
+        : "text-fontColor-light group-hover:text-fontColor-light";
+    const textSecondary = isDark 
+        ? "text-fontColor-dark/80 group-hover:text-fontColor-dark" 
+        : "text-fontColor-light/80 group-hover:text-fontColor-light";
 
     const shadowStyle = isDark ? "shadow-card-dark hover:shadow-hover-dark" : "shadow-card-light hover:shadow-hover-light";
 
@@ -24,7 +24,7 @@ const EducationCard = ({ title, subTitle, result, des }) => {
             {/* Timeline indicator */}
             <div className="w-10 max-md:w-7 h-[4px] bgOpacity mt-12 max-md:mt-6 relative">
                 <span className="absolute w-5 h-5 -top-[0.5rem] -left-2 flex justify-center items-center">
-                    <span className="absolute w-0 h-0 max-md:border-l-[5px] border-l-[9px] border-l-transparent border-r-[9px] max-md:border-r-[5px] border-r-transparent border-t-[18px] max-md:border-t-[10px] border-t-[#131312f0] group-hover:border-t-designColor transform -rotate-[-90deg] duration-300"></span>
+                    <span className={`absolute w-0 h-0 max-md:border-l-[5px] border-l-[9px] border-l-transparent border-r-[9px] max-md:border-r-[5px] border-r-transparent border-t-[18px] max-md:border-t-[10px] border-t-[#131312f0] group-hover:border-t-designColor-light dark:group-hover:border-t-designColor-dark transform -rotate-[-90deg] duration-300`}></span>
                 </span>
                
 
@@ -48,7 +48,10 @@ const EducationCard = ({ title, subTitle, result, des }) => {
                         </p>
                     </div>
                     <div>
-                        <p className={`md:px-2 md:py-1 max-md:px-1 xl:px-3 xl:py-2 text-sm md:text-[10px] xl:text-sm max-md:text-[8px] ${resultStyle} max-md:rounded-sm rounded-lg flex justify-center items-center font-medium`}>
+                        <p className="md:px-2 md:py-1 max-md:px-1 xl:px-3 xl:py-2 text-sm md:text-[10px] xl:text-sm max-md:text-[8px] max-md:rounded-sm rounded-lg flex justify-center items-center font-medium
+                                        dark:text-designColor-dark dark:group-hover:text-green-400 dark:bg-bodyColor-dark/60 dark:group-hover:bg-bodyColor-dark/80
+                                        text-designColor-light group-hover:text-green-500 bg-bodyColor-light/60 group-hover:bg-bodyColor-light/80
+                                        transition-colors duration-300">
                             {result}
                         </p>
                     </div>

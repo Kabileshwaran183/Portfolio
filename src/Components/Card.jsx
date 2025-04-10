@@ -8,8 +8,8 @@ const Card = ({ title, des, logo }) => {
     return (
         <div className={`w-full px-9 h-80 py-2 rounded-lg flex items-center transition-all duration-300 group ${
             theme === 'dark' 
-                ? 'bg-gradient-to-r from-bodyColor to-[#202327] shadow-card-dark hover:shadow-hover-dark' 
-                : 'bg-white shadow-card-light hover:shadow-hover-light border border-gray-100'
+                ? 'bg-bodyColor-dark/90 shadow-shadowOne hover:shadow-shadowOneHover' 
+                : 'bg-bodyColor-light shadow-md hover:shadow-lg border border-bodyColor-light/50'
         }`}>
             <div className="h-72 overflow-y-hidden">
                 <div className="flex h-full flex-col gap-5 translate-y-16 group-hover:translate-y-0 transition-transform duration-500">
@@ -18,16 +18,16 @@ const Card = ({ title, des, logo }) => {
                     </div>
                     <div className="flex flex-col gap-6">
                         <h2 className={`text-xl md:text-2xl font-titleFont font-bold ${
-                            theme === 'dark' ? 'text-gray-300' : 'text-gray-700'
+                            theme === 'dark' ? 'text-fontColor-dark' : 'text-fontColor-light'
                         }`}>
                             {title}
                         </h2>
                         <p className={`base truncated ${
-                            theme === 'dark' ? 'text-gray-400' : 'text-gray-600'
+                            theme === 'dark' ? 'text-fontColor-dark/80' : 'text-fontColor-light/80'
                         }`}>
                             {des}
                         </p>
-                        <span className="text-2xl text-designColor">
+                        <span className="text-2xl text-designColor dark:text-designColor-dark">
                             <HiArrowRight />
                         </span>
                     </div>

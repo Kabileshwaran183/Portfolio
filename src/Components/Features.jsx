@@ -9,10 +9,10 @@ const Features = () => {
     return (
         <section
             id="features"
-            className={`w-full py-20 ${
+            className={`w-full py-20 border-b-[1px] ${
                 theme === 'dark' 
-                    ? 'border-b border-gray-800' 
-                    : 'border-b border-gray-200'
+                    ? 'border-b-bodyColor-dark/50' 
+                    : 'border-b-bodyColor-light/50'
             } scroll-mt-[100px]`}
         >
             <Title title="Here Internships" des="What I Do" />

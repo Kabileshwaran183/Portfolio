@@ -9,8 +9,8 @@ const Banner = () => {
     return (
         <section
             id="home"
-            className={`w-full pt-10 md:pt-20 pb-10 flex flex-col gap-10 max-md:gap-7 xl:gap-0 md:flex-row items-center border-b-[1px] font-titleFont ${
-                theme === 'dark' ? 'border-b-black' : 'border-b-gray-200'
+            className={`w-full pt-10 pb-10 flex flex-col gap-10 max-md:gap-7 xl:gap-0 md:flex-row items-center border-b-[1px] font-titleFont ${
+                theme === 'dark' ? 'border-b-bodyColor-dark/50' : 'border-b-bodyColor-light/50'
             }`}
         >
             <Left />

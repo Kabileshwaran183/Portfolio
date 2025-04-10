@@ -8,7 +8,9 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="w-full py-20 border-b-[1px] border-b-black border-opacity-30 scroll-mt-[100px]"
+      className={`w-full py-20 border-b-[1px] ${
+        theme === 'dark' ? 'border-b-bodyColor-dark/50' : 'border-b-bodyColor-light/50'
+      } scroll-mt-[100px]`}
     >
       <div className="flex justify-center items-center text-center">
         <Title

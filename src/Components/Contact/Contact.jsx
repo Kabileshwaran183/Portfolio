@@ -74,7 +74,7 @@ const Contact = () => {
     <section
       id="contact"
       className={`w-full py-20 border-b-[1px] ${
-        theme === 'dark' ? 'border-b-gray-700' : 'border-b-gray-200'
+        theme === 'dark' ? 'border-b-bodyColor-dark/50' : 'border-b-bodyColor-light/50'
       } scroll-mt-[100px]`}
     >
       <div className="flex justify-center items-center text-center">
@@ -91,7 +91,7 @@ const Contact = () => {
                 }}
                 className={`${
                   emailCard
-                    ? "border-designColor rounded-lg bg-designColor/10"
+                    ? "border-designColor dark:border-designColor-dark rounded-lg bg-designColor/10 dark:bg-designColor-dark/10"
                     : "border-transparent"
                 } resumeLi`}
               >
@@ -104,7 +104,7 @@ const Contact = () => {
                 }}
                 className={`${
                   contactCard
-                    ? "border-designColor rounded-lg"
+                    ? "border-designColor dark:border-designColor-dark rounded-lg bg-designColor/10 dark:bg-designColor-dark/10"
                     : "border-transparent"
                 } resumeLi`}
               >
@@ -117,8 +117,8 @@ const Contact = () => {
           {emailCard && (
             <div className={`w-full lgl:w-[75%] h-full py-10 ${
               theme === 'dark' 
-                ? 'bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne' 
-                : 'bg-white shadow-md'
+                ? 'bg-bodyColor-dark/90 shadow-shadowOne' 
+                : 'bg-bodyColor-light shadow-md'
             } flex flex-col gap-8 p-4 lgl:p-8 rounded-lg`}>
               <form
                 ref={formRef}
@@ -138,7 +138,7 @@ const Contact = () => {
                 <div className="w-full flex flex-col lgl:flex-row gap-10">
                   <div className="w-full lgl:w-1/2 flex flex-col gap-4">
                 <p className={`text-sm uppercase tracking-wide ${
-                  theme === 'dark' ? 'text-gray-400' : 'text-gray-700'
+                  theme === 'dark' ? 'text-fontColor-dark/80' : 'text-fontColor-light/80'
                 }`}>
                   Your Name
                 </p>
@@ -146,17 +146,13 @@ const Contact = () => {
                   name="from_name"
                   onChange={(e) => setUsername(e.target.value)}
                   value={username}
-                  className={`${
-                    theme === 'dark' 
-                      ? 'bg-transparent text-gray-400 border-gray-600' 
-                      : 'bg-gray-100 text-gray-700 border-gray-300'
-                  } contactInput`}
+                  className={`${theme === 'dark' ? 'bg-bodyColor-dark/90 text-fontColor-dark border-2 border-designColor-dark/30 hover:border-designColor-dark/70' : 'bg-bodyColor-light/90 text-fontColor-light border-2 border-designColor-light/30 hover:border-designColor-light/70'} contactInput transition-colors duration-300`}
                       type="text"
                     />
                   </div>
                   <div className="w-full lgl:w-1/2 flex flex-col gap-4">
                 <p className={`text-sm uppercase tracking-wide ${
-                  theme === 'dark' ? 'text-gray-400' : 'text-gray-700'
+                  theme === 'dark' ? 'text-fontColor-dark/80' : 'text-fontColor-light/80'
                 }`}>
                   Phone Number
                 </p>
@@ -166,16 +162,16 @@ const Contact = () => {
                   value={phoneNumber}
                   className={`${
                     theme === 'dark' 
-                      ? 'bg-transparent text-gray-400 border-gray-600' 
-                      : 'bg-gray-100 text-gray-700 border-gray-300'
-                  } contactInput`}
+                      ? 'bg-bodyColor-dark/90 text-fontColor-dark border-2 border-designColor-dark/30 hover:border-designColor-dark/70' 
+                      : 'bg-bodyColor-light/90 text-fontColor-light border-2 border-designColor-light/30 hover:border-designColor-light/70'
+                  } contactInput transition-colors duration-300`}
                       type="text"
                     />
                   </div>
                 </div>
                 <div className="flex flex-col gap-4">
                 <p className={`text-sm uppercase tracking-wide ${
-                  theme === 'dark' ? 'text-gray-400' : 'text-gray-700'
+                  theme === 'dark' ? 'text-fontColor-dark/80' : 'text-fontColor-light/80'
                 }`}>
                   Email
                 </p>
@@ -185,15 +181,15 @@ const Contact = () => {
                   value={email}
                   className={`${
                     theme === 'dark' 
-                      ? 'bg-transparent text-gray-400 border-gray-600' 
-                      : 'bg-gray-100 text-gray-700 border-gray-300'
-                  } contactInput`}
+                      ? 'bg-bodyColor-dark/90 text-fontColor-dark border-2 border-designColor-dark/30 hover:border-designColor-dark/70' 
+                      : 'bg-bodyColor-light/90 text-fontColor-light border-2 border-designColor-light/30 hover:border-designColor-light/70'
+                  } contactInput transition-colors duration-300`}
                     type="email"
                   />
                 </div>
                 <div className="flex flex-col gap-4">
                 <p className={`text-sm uppercase tracking-wide ${
-                  theme === 'dark' ? 'text-gray-400' : 'text-gray-700'
+                  theme === 'dark' ? 'text-fontColor-dark/80' : 'text-fontColor-light/80'
                 }`}>
                   Subject
                 </p>
@@ -203,9 +199,9 @@ const Contact = () => {
                   value={subject}
                   className={`${
                     theme === 'dark' 
-                      ? 'bg-transparent text-gray-400 border-gray-600' 
-                      : 'bg-gray-100 text-gray-700 border-gray-300'
-                  } contactInput`}
+                      ? 'bg-bodyColor-dark/90 text-fontColor-dark border-2 border-designColor-dark/30 hover:border-designColor-dark/70' 
+                      : 'bg-bodyColor-light/90 text-fontColor-light border-2 border-designColor-light/30 hover:border-designColor-light/70'
+                  } contactInput transition-colors duration-300`}
                     type="text"
                   />
                 </div>
@@ -221,9 +217,9 @@ const Contact = () => {
                   value={message}
                   className={`${
                     theme === 'dark' 
-                      ? 'bg-transparent text-gray-400 border-gray-600' 
-                      : 'bg-gray-100 text-gray-700 border-gray-300'
-                  } contactTextArea`}
+                      ? 'bg-bodyColor-dark/90 text-fontColor-dark border-2 border-designColor-dark/30 hover:border-designColor-dark/70' 
+                      : 'bg-bodyColor-light/90 text-fontColor-light border-2 border-designColor-light/30 hover:border-designColor-light/70'
+                  } contactTextArea transition-colors duration-300`}
                     cols="30"
                     rows="8"
                   ></textarea>
@@ -233,8 +229,8 @@ const Contact = () => {
                     type="submit"
                     className={`w-full h-12 rounded-lg text-base tracking-wider uppercase duration-300 hover:border-[1px] hover:border-designColor border-transparent ${
                       theme === 'dark' 
-                        ? 'bg-[#141518] text-gray-400 hover:text-white' 
-                        : 'bg-gray-200 text-gray-700 hover:text-black'
+                        ? 'bg-bodyColor-dark text-fontColor-dark/80 hover:text-fontColor-dark' 
+                        : 'bg-bodyColor-light/90 text-fontColor-light/80 hover:text-fontColor-light'
                     }`}
                   >
                     Send Message
@@ -248,8 +244,8 @@ const Contact = () => {
           {contactCard && (
             <div className={`w-full lgl:w-[75%] h-full py-10 ${
               theme === 'dark' 
-                ? 'bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne' 
-                : 'bg-white shadow-md'
+                ? 'bg-bodyColor-dark/90 shadow-shadowOne' 
+                : 'bg-bodyColor-light shadow-md'
             } flex flex-col gap-8 p-4 lgl:p-8 rounded-lg`}>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -297,12 +293,16 @@ const ContactItem = ({ icon, title, link, label }) => {
   
   return (
     <div className={`flex items-center gap-4 p-4 rounded-lg shadow-md transition-shadow ${
-      theme === 'dark' ? 'bg-[#1e2024]' : 'bg-gray-100'
+      theme === 'dark' ? 'bg-bodyColor-dark/80' : 'bg-bodyColor-light/80'
     }`}>
-      <span className="text-designColor text-2xl">{icon}</span>
+      <span className={`text-2xl ${
+        theme === 'dark' 
+          ? 'text-designColor-dark hover:text-designColor-dark/90' 
+          : 'text-designColor-light hover:text-designColor-light/90'
+      } transition-colors duration-300`}>{icon}</span>
       <div>
         <h3 className={`text-lg font-medium ${
-          theme === 'dark' ? 'text-gray-300' : 'text-gray-700'
+          theme === 'dark' ? 'text-fontColor-dark' : 'text-fontColor-light'
         }`}>
           {title}
         </h3>
@@ -311,7 +311,7 @@ const ContactItem = ({ icon, title, link, label }) => {
           target="_blank"
           rel="noreferrer"
           className={`${
-            theme === 'dark' ? 'text-gray-400' : 'text-gray-600'
+            theme === 'dark' ? 'text-fontColor-dark/80' : 'text-fontColor-light/80'
           } hover:text-designColor transition-colors`}
         >
           {label}

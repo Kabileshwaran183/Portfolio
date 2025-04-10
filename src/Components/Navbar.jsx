@@ -7,9 +7,9 @@ const Navbar = () => {
 
   return (
     <div className={`w-full xl:h-24 mdl:h-20 max-md:h-14 sticky top-0 z-50 ${
-      theme === 'dark' ? 'bg-bodyColor' : 'bg-gray-100'
+      theme === 'dark' ? 'bg-bodyColor-dark' : 'bg-bodyColor-light'
     } mx-auto flex justify-between items-center font-titleFont border-b-[1px] ${
-      theme === 'dark' ? 'border-b-gray-600' : 'border-b-gray-300'
+      theme === 'dark' ? 'border-b-designColor-dark/30' : 'border-b-designColor-light/30'
     }`}>
       <div>
         <img src="/prof/logonew.png" className="md:w-16 w-10 rounded-b-full"></img>
@@ -19,8 +19,8 @@ const Navbar = () => {
           {navLinksData.map(({ _id, title, link }) => (
             <li
               className={`text-base font-normal ${
-                theme === 'dark' ? 'text-gray-400' : 'text-gray-600'
-              } tracking-wide hover:text-designColor duration-300 group cursor-pointer`}
+                theme === 'dark' ? 'text-fontColor-dark/80' : 'text-fontColor-light/80'
+              } tracking-wide hover:text-designColor dark:hover:text-designColor-dark duration-300 group cursor-pointer`}
               key={_id}
             >
               <a href={link}>{title}</a>
