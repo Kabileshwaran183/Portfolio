@@ -28,7 +28,7 @@ const Navbar = () => {
               : `shadow-lg ${theme === 'dark' ? 'shadow-black/20' : 'shadow-gray-300'}`
     }`}>
       <div>
-        <img src="/prof/logonew.png" className={`transition-all duration-300 ${scrolled? 'md:w-10 w-8' :'md:w-16 w-10'} rounded-b-full ml-5`}></img>
+        <img src="/prof/logonew.png" className={`transition-all duration-300 ${scrolled? 'md:w-10 w-8' :'md:w-12 w-9'} rounded-b-full ml-5`}></img>
       </div>
       <div className="flex items-center gap-6">
         <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10">
@@ -37,7 +37,7 @@ const Navbar = () => {
               className={` transition-all duration-300 ${
                 scrolled ? `text-base ${
                 theme === 'dark' ? 'text-fontColor-dark/60' : 'text-fontColor-light/60'
-              } ` : `text-lg font-bold  ${
+              } ` : `lg:text-lg md:text-base text-sm  font-bold  ${
                 theme === 'dark' ? 'text-fontColor-dark/50' : 'text-fontColor-light/50'
               }`
               }  tracking-wide hover:text-designColor dark:hover:text-designColor-dark duration-300 group cursor-pointer relative`}
@@ -52,7 +52,7 @@ const Navbar = () => {
         </ul>
         <button
           onClick={toggleTheme}
-          className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors mr-6"
+          className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors mr-3 md:mr-6"
         >
           {theme === 'dark' ? (
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-yellow-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
