@@ -7,7 +7,7 @@ const Resume = () => {
     return (
         <section
             id="resume"
-            className={`w-full py-20 border-b-[1px] ${
+            className={`w-full py-20 border-b-[1px] pad ${
                 theme === 'dark' ? 'border-b-bodyColor-dark/50' : 'border-b-bodyColor-light/50'
             } scroll-mt-[100px]`}
         >

@@ -7,7 +7,7 @@ const Education = () => {
   return (
     <section
       id="education"
-      className={`w-full py-20 scroll-mt-[100px] mb-20 ${
+      className={`w-full py-20 scroll-mt-[100px] mb-20 pad ${
         theme === 'dark' ? 'bg-bodyColor-dark' : 'bg-bodyColor-light'
       }`}
     >
