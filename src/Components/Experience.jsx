@@ -9,7 +9,7 @@ const Experience = () => {
     return (
         <section
             id="experience"
-            className={`w-full py-20 border-b-[1px] pad ${
+            className={`w-full py-20 border-b-[1px] pad md:mt-40 lg:mt-20 ${
                 theme === 'dark' 
                     ? 'border-b-bodyColor-dark/50' 
                     : 'border-b-bodyColor-light/50'
